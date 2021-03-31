@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Pink</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -14,25 +15,25 @@
             <use xlink:href="#"></use>
           </svg>
         </a>
+        <!-- <div class="main-nav__wrapper">
+           <ul class="main-nav__list">
+             <li class="main-nav__item main-nav__item&#45;&#45;active">
+               <a class="main-nav__link">Главная</a>
+             </li>
+             <li class="main-nav__item">
+               <a class="main-nav__link" href="catalog.html">Фотографии</a>
+             </li>
+             <li class="main-nav__item">
+               <a class="main-nav__link" href="form.html">Конкурс</a>
+             </li>
+             <li class="main-nav__item">
+               <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+             </li>
+           </ul>
+         </div>-->
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-      </div>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
       </div>
     </nav>
   </div>
@@ -80,20 +81,29 @@
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features__list">
-        <li class="features__item features__item--first">
+        <li class="features__item">
           <h3 class="features__item-title">Поднимает настроение</h3>
           <p class="features__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
             несколько кликов!</p>
+          <div class="features__item-img-box">
+            <img class="features__item-img visually-hidden" src="" width="155" height="320" alt="">
+          </div>
         </li>
-        <li class="features__item features__item--second">
+        <li class="features__item">
           <h3 class="features__item-title">Меняет мир вокруг</h3>
           <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
             усилить эффект</p>
+          <div class="features__item-img-box">
+            <img class="features__item-img visually-hidden" src="" width="155" height="32" alt="">
+          </div>
         </li>
-        <li class="features__item features__item--third">
+        <li class="features__item">
           <h3 class="features__item-title">Заводит новых друзей</h3>
           <p class="features__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
+          <div class="features__item-img-box">
+            <img class="features__item-img" src="img/iphone.png" width="155" height="320" alt="картинка айфона с розовой заставкой и смайлом">
+          </div>
         </li>
       </ul>
     </section>
@@ -111,31 +121,25 @@
        </div>
      </div>
    </section>-->
-  <section class="slider-reviews content-wrapper">
+  <section class="slider-reviews">
     <h2 class="visually-hidden">Отзывы</h2>
     <div class="slider-reviews__slide slider-reviews__slide--current slide">
       <p class="slide__author">Николай Петров</p>
-      <blockquote class="slide__quote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-        привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-        фотографии!
+      <blockquote class="slide__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
       </blockquote>
     </div>
-    <div class="slider-reviews__slide slide">
-      <div class="slider-reviews__slide slider-reviews__slide--current slide">
+    <!--<div class="slider-reviews__slide slide">
+      <div class="slider-reviews__slide slider-reviews__slide-current slide">
         <p class="slide__author">Николай Петров</p>
-        <blockquote class="slide__quote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-          привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-          фотографии!
+        <blockquote class="slide__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
         </blockquote>
       </div>
-      <div class="slider-reviews__slide slider-reviews__slide--current slide">
+      <div class="slider-reviews__slide slider-reviews__slide-current slide">
         <p class="slide__author">Николай Петров</p>
-        <blockquote class="slide__quote">Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-          привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-          фотографии!
+        <blockquote class="slide__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
         </blockquote>
       </div>
-    </div>
+    </div>-->
     <!--<div class="slider-reviews__slide slider-reviews__slide current slide">
       <blockquote class="slide__quote">
         <p class="slide__quote-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на
@@ -180,89 +184,90 @@
   </section>
   <section class="price">
     <h2 class="visually-hidden">Стоимость приложения</h2>
-    <div class="price__slider content-wrapper">
+    <div class="price__slider">
       <table class="price__table table-price">
         <thead>
-        <tr>
-          <th class="table-price__header">
+        <tr class="table-price__header-row">
+          <!--<th class="table-price__header">
             <span class="table-price__license-type">База</span>
             <span class="table-price__license-price">1,99 USD</span>
-          </th>
+          </th>-->
           <th class="table-price__header table-price__header--hit" data-hit-text="Хит">
             <span class="table-price__license-type">Стандарт</span>
             <span class="table-price__license-price">3,99 USD</span>
           </th>
-          <th class="table-price__header">
+          <!--<th class="table-price__header">
             <span class="table-price__license-type">Анлим</span>
             <span class="table-price__license-price">9,99 USD</span>
-          </th>
+          </th>-->
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td class="table-price__cell">Розовый фильтр
+          <!--<td class="table-price__cell">Розовый фильтр
+            <span class="table-price__feature-value table-price__feature-value&#45;&#45;true">
+              <span class="visually-hidden">Да</span>
+            </span>
+          </td>-->
+          <td class="table-price__cell">
+            <span class="table-price__cell-text">Розовый фильтр</span>
             <span class="table-price__feature-value table-price__feature-value--true">
               <span class="visually-hidden">Да</span>
             </span>
           </td>
-          <td class="table-price__cell">Розовый фильтр
-            <span class="table-price__feature-value table-price__feature-value--true">
+          <!--<td class="table-price__cell">Розовый фильтр
+            <span class="table-price__feature-value table-price__feature-value&#45;&#45;true">
               <span class="visually-hidden">Да</span>
             </span>
-          </td>
-          <td class="table-price__cell">Розовый фильтр
-            <span class="table-price__feature-value table-price__feature-value--true">
-              <span class="visually-hidden">Да</span>
-            </span>
-          </td>
+          </td>-->
         </tr>
         <tr>
-          <td class="table-price__cell">Смайлики
-            <span class="table-price__feature-value table-price__feature-value--false">
-              <span class="visually-hidden">Нет</span>
-            </span>
-          </td>
-          <td class="table-price__cell">Смайлики
-            <span class="table-price__feature-value table-price__feature-value--true">
-              <span class="visually-hidden">Да</span>
-            </span>
-          </td>
+          <!-- <td class="table-price__cell">Смайлики
+             <span class="table-price__feature-value table-price__feature-value&#45;&#45;false">
+               <span class="visually-hidden">Нет</span>
+             </span>
+           </td>-->
           <td class="table-price__cell">Смайлики
             <span class="table-price__feature-value table-price__feature-value--true">
               <span class="visually-hidden">Да</span>
             </span>
           </td>
+          <!--<td class="table-price__cell">Смайлики
+            <span class="table-price__feature-value table-price__feature-value&#45;&#45;true">
+              <span class="visually-hidden">Да</span>
+            </span>
+          </td>-->
         </tr>
         <tr>
+          <!--<td class="table-price__cell">Комментарии
+            <span class="table-price__feature-value table-price__feature-value&#45;&#45;false">
+              <span class="visually-hidden">Нет</span>
+            </span>
+          </td>-->
           <td class="table-price__cell">Комментарии
             <span class="table-price__feature-value table-price__feature-value--false">
               <span class="visually-hidden">Нет</span>
             </span>
           </td>
-          <td class="table-price__cell">Комментарии
-            <span class="table-price__feature-value table-price__feature-value--false">
-              <span class="visually-hidden">Нет</span>
-            </span>
-          </td>
-          <td class="table-price__cell">Комментарии
-            <span class="table-price__feature-value table-price__feature-value--true">
+          <!--<td class="table-price__cell">Комментарии
+            <span class="table-price__feature-value table-price__feature-value&#45;&#45;true">
               <span class="visually-hidden">Да</span>
             </span>
-          </td>
+          </td>-->
         </tr>
         </tbody>
       </table>
-      <div class="price__controls controls">
-        <button class="controls__button controls__button--current" type="button">1
-        </button>
-        <button class="controls__button" type="button">2
-        </button>
-        <button class="controls__button" type="button">3
-        </button>
-      </div>
+    </div>
+    <div class="price__controls controls">
+      <button class="controls__button" type="button">1
+      </button>
+      <button class="controls__button controls__button--current" type="button">2
+      </button>
+      <button class="controls__button" type="button">3
+      </button>
     </div>
   </section>
-  <section class="contacts content-wrapper">
+  <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
     <p class="contacts__title">Остались вопросы?</p>
     <p class="contacts__title">Свяжитесь с нами!</p>
@@ -291,7 +296,7 @@
   </section>
 </main>
 <footer class="page-footer">
-  <div class="page-footer__content-wrapper content-wrapper">
+  <div class="page-footer__content-wrapper">
     <a class="footer-logo" aria-label="Логотип сайта Pink">
       <svg class="footer-logo__image" width="145" height="40">
         <use xlink:href="#"></use>
@@ -330,5 +335,21 @@
     </div>
   </div>
 </footer>
+<div class="modal-nav">
+  <ul class="modal-nav__list">
+    <li class="modal-nav__item modal-nav__item--active">
+      <a class="modal-nav__link">Главная</a>
+    </li>
+    <li class="modal-nav__item">
+      <a class="modal-nav__link" href="catalog.html">Фотографии</a>
+    </li>
+    <li class="modal-nav__item">
+      <a class="modal-nav__link" href="form.html">Конкурс</a>
+    </li>
+    <li class="modal-nav__item">
+      <a class="modal-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+    </li>
+  </ul>
+</div>
 </body>
 </html>

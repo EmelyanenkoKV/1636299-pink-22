@@ -1,0 +1,25 @@
+.map {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: -20px;
+}
+
+.map-img {
+  width: @mobile-width;
+  height: 200px;
+  background-color: @white;
+}
+
+.map::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/mask.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  right: 0;
+  height: 33px;
+  background-size: 100% 33px;
+}

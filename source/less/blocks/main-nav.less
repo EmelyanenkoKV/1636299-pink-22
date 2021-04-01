@@ -1,28 +1,27 @@
-.modal-nav {
-  background-color: @dark-table;
-  width: @mobile-width;
-}
-
-.modal-nav__list {
-  list-style: none;
+.main-nav__logo-wrapper {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
+  padding: 20px;
 }
 
-.modal-nav__item {
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  background-color: @dark-table;
+  margin: 0 auto;
+}
+
+.main-nav__item {
   padding: 20px 0;
   margin: 0 auto;
   border-top: 1px solid @black;
   text-align: center;
-  width: @mobile-width;
+  min-width: @mobile-width;
   height: 65px;
   box-sizing: border-box;
 }
 
-.modal-nav__link {
+.main-nav__link {
   color: @white;
   font-weight: 700;
   font-size: 18px;

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Pink</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -15,26 +16,24 @@
             <use xlink:href="#"></use>
           </svg>
         </a>
-        <!-- <div class="main-nav__wrapper">
-           <ul class="main-nav__list">
-             <li class="main-nav__item main-nav__item&#45;&#45;active">
-               <a class="main-nav__link">Главная</a>
-             </li>
-             <li class="main-nav__item">
-               <a class="main-nav__link" href="catalog.html">Фотографии</a>
-             </li>
-             <li class="main-nav__item">
-               <a class="main-nav__link" href="form.html">Конкурс</a>
-             </li>
-             <li class="main-nav__item">
-               <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-             </li>
-           </ul>
-         </div>-->
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </div>
 </header>
@@ -267,32 +266,32 @@
       </button>
     </div>
   </section>
-  <section class="contacts">
+  <section class="contac">
     <h2 class="visually-hidden">Контакты</h2>
-    <p class="contacts__title">Остались вопросы?</p>
-    <p class="contacts__title">Свяжитесь с нами!</p>
-    <ul class="contacts__list">
-      <li class="contacts__list__item">
-        <p class="contacts__list__item-title">Звоните:</p>
-        <p class="contacts__list__item-description">
-          <a class="contacts__list__item-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+    <p class="contac__title">Остались вопросы?</p>
+    <p class="contac__title">Свяжитесь с нами!</p>
+    <ul class="contac__contacts-list contacts-list">
+      <li class="contacts-list__item">
+        <p class="contacts-list__item-title">Звоните:</p>
+        <p class="contacts-list__item-description">
+          <a class="contacts-list__item-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </p>
       </li>
-      <li class="contacts__list__item">
-        <p class="contacts__list__item-title">Пишите:</p>
-        <p class="contacts__list__item-description">
-          <a class="contacts__list__item-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      <li class="contacts-list__item">
+        <p class="contacts-list__item-title">Пишите:</p>
+        <p class="contacts-list__item-description">
+          <a class="contacts-list__item-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
       </li>
-      <li class="contacts__list__item">
-        <p class="contacts__list__item-title">Приезжайте в гости:</p>
-        <address class="contacts__list__item-address">ул. Большая Конюшенная, 19/8</address>
+      <li class="contacts-list__item">
+        <p class="contacts-list__item-title">Приезжайте в гости:</p>
+        <address class="contacts-list__item-address">ул. Большая Конюшенная, 19/8</address>
       </li>
     </ul>
   </section>
   <section class="map">
     <h2 class="visually-hidden">Как до нас добраться?</h2>
-    <img class="map-img" src="img/map.jpg" alt="Карта города Седона" width="320" height="200">
+    <img src="img/map.jpg" alt="Карта" width="320" height="200">
   </section>
 </main>
 <footer class="page-footer">
@@ -335,21 +334,5 @@
     </div>
   </div>
 </footer>
-<div class="modal-nav">
-  <ul class="modal-nav__list">
-    <li class="modal-nav__item modal-nav__item--active">
-      <a class="modal-nav__link">Главная</a>
-    </li>
-    <li class="modal-nav__item">
-      <a class="modal-nav__link" href="catalog.html">Фотографии</a>
-    </li>
-    <li class="modal-nav__item">
-      <a class="modal-nav__link" href="form.html">Конкурс</a>
-    </li>
-    <li class="modal-nav__item">
-      <a class="modal-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-    </li>
-  </ul>
-</div>
 </body>
 </html>

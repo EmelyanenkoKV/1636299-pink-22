@@ -9,9 +9,7 @@
 }
 
 .form-feedback__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  .list-reset;
 }
 
 .form-feedback__name-item {
@@ -61,17 +59,23 @@
   text-align: center;
   text-transform: uppercase;
   width: 220px;
-}
 
-.legend-achievements {
-  margin-bottom: 45px;
+  &--achievements {
+    margin-bottom: 45px;
+  }
+
+  &--platform {
+    margin-bottom: 40px;
+  }
+
+  &--emotions {
+    margin-bottom: 20px;
+  }
 }
 
 .form-feedback__list-achievements,
 .form-feedback__list-platform {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  .list-reset;
 }
 
 .form-feedback__achievements-item,
@@ -126,10 +130,6 @@
   background-color: @grey;
 }
 
-.legend-platform {
-  margin-bottom: 40px;
-}
-
 .form-feedback__label-radio {
   &::before {
     content: "";
@@ -160,10 +160,6 @@
 .form-feedback__emotions-wrapper {
   background-color: @white;
   padding: 40px 20px 50px;
-}
-
-.legend-emotions {
-  margin-bottom: 20px;
 }
 
 .form-feedback__textarea {

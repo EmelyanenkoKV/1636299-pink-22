@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
 <head>
-  <meta charset="UTF-8">
-  <title>Pink: Конкурс</title>
+  <meta charset="utf-8">
+  <title>Pink</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="page__body">
 <header class="page-header">
@@ -19,22 +20,20 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
     </nav>
   </div>
 </header>
@@ -42,14 +41,14 @@
   <div class="page-contest__title-wrapper">
     <h1 class="page-contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </div>
-  <div class="page-contest__subtitle-wrapper content-wrapper">
+  <div class="page-contest__promo-wrapper">
     <p class="page-contest__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
       <!--<span class="mobile-hidden">Пожалуйста, заполните форму ниже:</span>-->
     </p>
   </div>
   <form class="page-contest__form-feedback form-feedback" action="https://echo.htmlacademy.ru" method="post">
     <div class="form-feedback__name-wrapper">
-      <fieldset class="form-feedback__fieldset form-feedback__fieldset--name">
+      <fieldset class="form-feedback__fieldset">
         <ul class="form-feedback__list">
           <li class="form-feedback__name-item">
             <label class="form-feedback__label" for="lastname">Фамилия:</label>
@@ -67,38 +66,38 @@
       </fieldset>
     </div>
     <div class="form-feedback__achievements-wrapper">
-      <fieldset class="form-feedback__fieldset form-feedback__fieldset--achievements">
-        <legend class="form-feedback__legend">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="form-feedback__list-achievements form-feedback__list-achievements--row">
+      <fieldset class="form-feedback__fieldset">
+        <legend class="form-feedback__legend form-feedback__legend--achievements">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="form-feedback__list-achievements">
           <li class="form-feedback__achievements-item">
-            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="shark" name="achievements" value="shark" checked>
+            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="shark" name="achievements" checked>
             <label class="form-feedback__label-checkbox" for="shark">Сделал селфи с акулой</label>
           </li>
           <li class="form-feedback__achievements-item">
-            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="beach" name="achievements" value="beach" checked>
+            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="beach" name="achievements" checked>
             <label class="form-feedback__label-checkbox" for="beach">Обгорел на пляже</label>
           </li>
           <li class="form-feedback__achievements-item">
-            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="chuck" name="achievements" value="chuck">
+            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="chuck" name="achievements">
             <label class="form-feedback__label-checkbox" for="chuck">Видел Чака Норриса</label>
           </li>
           <li class="form-feedback__achievements-item">
-            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="souvenirs" name="achievements" value="souvenirs">
+            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="souvenirs" name="achievements">
             <label class="form-feedback__label-checkbox" for="souvenirs">Накупил сувениров</label>
           </li>
           <li class="form-feedback__achievements-item">
-            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="tower" name="achievements" value="tower" checked>
+            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="tower" name="achievements" checked>
             <label class="form-feedback__label-checkbox" for="tower">Удержал башню</label>
           </li>
           <li class="form-feedback__achievements-item">
-            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="hotel" name="achievements" value="hotel">
+            <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="hotel" name="achievements">
             <label class="form-feedback__label-checkbox" for="hotel">Разгромил отель</label>
           </li>
         </ul>
       </fieldset>
     </div>
     <div class="form-feedback__contacts-wrapper">
-      <fieldset class="form-feedback__fieldset form-feedback__fieldset--contacts">
+      <fieldset class="form-feedback__fieldset">
         <ul class="form-feedback__list">
           <li class="form-feedback__name-item">
             <label class="form-feedback__label" for="phone">Номер телефона</label>
@@ -112,8 +111,8 @@
       </fieldset>
     </div>
     <div class="form-feedback__platform-wrapper">
-      <fieldset class="form-feedback__fieldset form-feedback__fieldset--platform">
-        <legend class="form-feedback__legend">С каким приложением путешествовали?</legend>
+      <fieldset class="form-feedback__fieldset">
+        <legend class="form-feedback__legend form-feedback__legend--platform">С каким приложением путешествовали?</legend>
         <ul class="form-feedback__list-platform">
           <li class="form-feedback__platform-item">
             <input class="form-feedback__radio visually-hidden" type="radio" id="ios" name="platform" value="Pink для iOS" checked>
@@ -131,16 +130,16 @@
       </fieldset>
     </div>
     <div class="form-feedback__emotions-wrapper">
-      <fieldset class="form-feedback__fieldset form-feedback__fieldset--emotions">
-        <legend class="form-feedback__legend">Опишите свои эмоции</legend>
+      <fieldset class="form-feedback__fieldset">
+        <legend class="form-feedback__legend form-feedback__legend--emotions">Опишите свои эмоции</legend>
         <textarea class="form-feedback__textarea" name="message" id="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         <label for="message"></label>
       </fieldset>
     </div>
     <div class="form-feedback__submit-wrapper">
-      <button class="form-feedback__button button button--squared button--green" type="submit">Отправить форму</button>
+      <button class="form-feedback__button" type="submit">Отправить форму</button>
       <p class="form-feedback__notification">
-        <span class="form-feedback__asterix">*</span>—обязательные поля</p>
+        <span class="form-feedback__asterix">*</span>— обязательные поля</p>
     </div>
   </form>
 </main>
@@ -190,17 +189,13 @@
     <p class="modal-form__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.В ближайшее время мы рассмотрим ее и оповестим вас.</p>
   </div>
   <div class="modal-form__bottom-success">
-    <button class="modal-form__button modal-form__button--green">Закрыть окно</button>
+    <button class="modal-form__button">Закрыть окно</button>
   </div>
 </div>
 <div class="modal-form modal-form--failure">
-  <div class="modal-form__top-failure">
-    <p class="modal-form__title">Что-то пошло не так!</p>
-    <p class="modal-form__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-  </div>
-  <div class="modal-form__bottom-squared">
-    <button class="modal-form__button modal-form__button--green">OK</button>
-  </div>
+  <p class="modal-form__title">Что-то пошло не так!</p>
+  <p class="modal-form__text modal-form__text-failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <button class="modal-form__button">OK</button>
 </div>
 </body>
 </html>

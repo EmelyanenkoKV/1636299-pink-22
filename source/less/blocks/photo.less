@@ -1,5 +1,5 @@
 .photo {
-  margin: 0 auto 45px;
+  margin: 0 auto 20px;
 }
 
 .photo__link {
@@ -9,6 +9,28 @@
   height: 180px;
   text-decoration: none;
   padding: 0;
+
+  &--wide {
+    width: 320px;
+    height: 135px;
+    text-decoration: none;
+    position: relative;
+
+    &::before {
+      content: attr(data-panorama-text);
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 20px;
+      padding: 6px 20px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      background-color: @pink;
+      color: @white;
+    }
+  }
 }
 
 .photo__content {

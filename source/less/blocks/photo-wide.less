@@ -1,0 +1,86 @@
+.photo-wide {
+  margin: 0 auto 20px;
+}
+
+.photo-wide__link {
+  display: block;
+  overflow: hidden;
+  width: 320px;
+  height: 135px;
+  text-decoration: none;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    content: attr(data-panorama-text);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 20px;
+    padding: 6px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: @pink;
+    color: @white;
+  }
+}
+
+.photo-wide__content {
+  background-color: @grey;
+  width: 280px;
+  padding: 25px 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.photo-wide__author {
+  margin: 0 auto 15px;
+}
+
+.photo-wide__author-name {
+  font-weight: 700;
+  color: @dark-table;
+}
+
+.photo-wide__date {
+  font-weight: 300;
+  font-size: 12px;
+  color: @dark-table;
+  text-transform: uppercase;
+}
+
+.photo-wide__text {
+  font-weight: 400;
+  color: @dark-table;
+  margin: 0 auto 25px;
+}
+
+.photo-wide__likes {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo-wide__like-count {
+  text-align: right;
+  color: @pink;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.photo-wide__like-button {
+  display: block;
+  padding: 0;
+  width: 13px;
+  height: 12px;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}

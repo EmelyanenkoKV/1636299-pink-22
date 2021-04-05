@@ -1,0 +1,70 @@
+.photo {
+  margin: 0 auto 45px;
+}
+
+.photo__link {
+  display: block;
+  overflow: hidden;
+  width: 280px;
+  height: 180px;
+  text-decoration: none;
+  padding: 0;
+}
+
+.photo__content {
+  background-color: @grey;
+  width: 280px;
+  padding: 25px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.photo__author {
+  margin: 0 auto 15px;
+}
+
+.photo__author-name {
+  font-weight: 700;
+  color: @dark-table;
+}
+
+.photo__date {
+  font-weight: 300;
+  font-size: 12px;
+  color: @dark-table;
+  text-transform: uppercase;
+}
+
+.photo__text {
+  font-weight: 400;
+  color: @dark-table;
+  margin: 0 auto 25px;
+}
+
+.photo__likes {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo__like-count {
+  text-align: right;
+  color: @pink;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.photo__like-button {
+  display: block;
+  padding: 0;
+  width: 13px;
+  height: 12px;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}

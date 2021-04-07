@@ -1,0 +1,95 @@
+.form-photo__image {
+  background-image: url("../img/photo-label.jpg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 280px;
+  height: 375px;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 45px;
+}
+
+.form-photo__filters {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: @light-dark;
+    left: -20px;
+    bottom: -30px;
+    width: @mobile-width;
+  }
+}
+
+.form-photo__filters-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/*Временно для наглядности*/
+
+.form-photo__filter-button {
+  background-color: @pink;
+  width: 45px;
+  height: 45px;
+}
+
+.form-photo__filter-input {
+  position: relative;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.form-photo__bar {
+  width: 240px;
+  height: 2px;
+  background: @dark-table;
+}
+
+.form-photo__toggle {
+  position: absolute;
+  top: 2px;
+  left: 195px;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  cursor: pointer;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  background-color: @white;
+  outline: none;
+}
+
+.form-photo__buttons-photo {
+  margin-top: 70px;
+}
+
+.form-photo__button-photo {
+  width: 280px;
+  padding: 20px 90px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  margin: 0 auto;
+
+  &--post {
+    border: 3px solid @pink;
+    color: @pink;
+  }
+
+  &--disabled {
+    border: 3px solid @light-dark;
+    color: @light-dark;
+  }
+
+  &:first-child {
+    margin-bottom: 10px;
+  }
+}

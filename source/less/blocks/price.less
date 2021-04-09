@@ -3,10 +3,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
-  padding: 160px 20px 50px;
+  padding: 130px 0 50px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 135px 20px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 260px 130px 95px;
+  }
 }
 
 .price__slider {
-  margin: 0 auto 45px;
+  overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.price__controls {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

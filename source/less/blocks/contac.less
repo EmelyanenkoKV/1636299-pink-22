@@ -1,7 +1,15 @@
 .contac {
-  padding: 45px 40px 0;
+  padding: 50px 40px 0;
   text-align: center;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    padding: 55px 50px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 75px 100px 0;
+  }
 }
 
 .contac__title {
@@ -10,9 +18,25 @@
   font-size: 24px;
   line-height: 29px;
   color: @dark-table;
+
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 69px;
+  }
 }
 
 .contac__contacts-list {
   .list-reset;
   padding: 35px 0 40px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

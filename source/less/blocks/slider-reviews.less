@@ -1,8 +1,51 @@
 .slider-reviews {
   background-color: @white;
+  padding: 50px 20px 45px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 110px 20px 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 195px 130px 5px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 73px;
+    background-size: 79px 63px;
+  }
 }
 
 .slider-reviews__slide {
-  padding: 50px 20px 45px;
   background-color: @white;
+  margin: 0 auto 45px;
+  display: none;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    width: 780px;
+  }
+
+  &--current {
+    display: flex;
+  }
+}
+
+.slider-reviews__slider-nav {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    top: 50%;
+    left: 100px;
+    right: 100px;
+    outline: none;
+  }
 }

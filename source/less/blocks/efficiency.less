@@ -1,0 +1,104 @@
+.efficiency {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+}
+
+.efficiency__content-wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 55px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 20px 130px 65px;
+    width: 940px;
+  }
+}
+
+.efficiency__image {
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 240px;
+    height: 275px;
+    padding: 65px 65px 50px;
+    background-image: url("../img/time-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/time-desctop.svg");
+    width: 300px;
+    height: 345px;
+    padding: 100px 65px 65px 80px;
+  }
+}
+
+.efficiency__image-text {
+  @media (min-width: @tablet-width) {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 163px;
+    color: @pink;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 120px;
+    line-height: 163px;
+  }
+}
+
+.efficiency__description {
+  @media (min-width: @tablet-width) {
+    padding: 40px 0 10px;
+    width: 310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 0 10px;
+    width: 575px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.efficiency__title {
+  @media (min-width: @tablet-width) {
+    margin: 0 0 25px;
+    width: 168px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: @black;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+}
+
+.efficiency__text {
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    margin: 0 0 25px;
+  }
+}
+
+.efficiency__link {
+  font-weight: 400;
+  color: @pink;
+}

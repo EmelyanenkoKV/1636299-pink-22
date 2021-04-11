@@ -5,6 +5,8 @@
   transform: translateX(-61%);
   border-spacing: 0;
   margin-bottom: 45px;
+  border-bottom: 2px solid @light-grey;
+  border-radius: 0 0 3px 3px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
@@ -23,7 +25,7 @@
   font-size: 18px;
   color: @white;
   background-color: @dark-table;
-  border-radius: 1px 0 0 0;
+  border-radius: 2px 0 0 0;
 
   @media (min-width: @tablet-width) {
     padding-top: 10px;
@@ -46,6 +48,7 @@
 
   &:last-child {
     border-right-color: @dark-table;
+    border-radius: 0 2px 0 0;
   }
 
   &--hit {
@@ -122,7 +125,7 @@
 .table-price__cell {
   padding: 15px 20px;
   border-right: 2px solid @light-grey;
-  border-bottom: 2px solid @light-grey;
+  border-top: 2px solid @light-grey;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
@@ -150,6 +153,10 @@
       font-size: 18px;
     }
   }
+}
+
+.table-price__cell--radius-up {
+  border-radius: 3px 0 0 0;
 }
 
 .table-price__feature {

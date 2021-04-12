@@ -5,15 +5,39 @@
   box-shadow: 0 7px 15px @modal-shadow;
   border-radius: 1px;
 
-  &--failure {
-    background-color: @white;
-    padding: 45px 20px 50px;
+  @media (min-width: @tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
   }
 }
 
 .modal-form__top-success {
   background-color: @white;
   padding: 45px 30px 40px;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 65px 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 60px 45px;
+  }
+}
+
+.modal-form__top-failure {
+  background-color: @white;
+  padding: 45px 20px 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px 70px 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 200px 70px;
+  }
 }
 
 .modal-form__title {
@@ -23,6 +47,21 @@
   color: @black;
   text-align: center;
   margin: 0 auto 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  &--failure {
+    @media (min-width: @tablet-width) {
+      padding: 0 35px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0;
+    }
+  }
 }
 
 .modal-form__text {
@@ -32,6 +71,17 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &--success {
+    @media (min-width: @desktop-width) {
+      padding: 0 140px;
+    }
+  }
 }
 
 .modal-form__bottom-success {
@@ -39,7 +89,17 @@
   padding: 50px 20px;
 }
 
+.modal-form__bottom-failure {
+  padding: 25px 20px 50px;
+
+  @media (min-width: @desktop-width) {
+    background-color: @grey;
+    padding: 50px 20px;
+  }
+}
+
 .modal-form__button {
+  display: block;
   text-align: center;
   color: @white;
   font-weight: 700;
@@ -53,8 +113,31 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-}
+  text-transform: uppercase;
 
-.modal-form__text-failure {
-  margin-bottom: 50px;
+  &:hover,
+  &:focus {
+    background-color: @green-hover;
+    outline: none;
+  }
+
+  &:active {
+    background-color: @green-hover;
+    color: @white-dark;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: @light-grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 295px;
+  }
+
+  &--success {
+    @media (min-width: @desktop-width) {
+      width: 455px;
+    }
+  }
 }

@@ -1,5 +1,13 @@
 .photo {
   margin: 0 auto 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 55px;
+  }
 }
 
 .photo__link {
@@ -10,11 +18,26 @@
   text-decoration: none;
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
   &--wide {
     width: 320px;
-    height: 135px;
+    height: 137px;
     text-decoration: none;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+      width: 660px;
+      height: 509px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+      height: 506px;
+    }
 
     &::before {
       content: attr(data-panorama-text);
@@ -29,8 +52,22 @@
       text-transform: uppercase;
       background-color: @pink;
       color: @white;
+
+      @media (min-width: @tablet-width) {
+        top: 56px;
+        right: 40px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: 54px;
+        right: 130px;
+      }
     }
   }
+}
+
+.photo__wrap {
+  margin-bottom: auto;
 }
 
 .photo__content {
@@ -39,10 +76,37 @@
   padding: 25px;
   margin: 0 auto;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 155px;
+    padding: 30px 30px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &--wide {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      padding: 30px;
+      width: 620px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 940px;
+    }
+  }
 }
 
 .photo__author {
   margin: 0 auto 15px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .photo__author-name {
@@ -61,6 +125,10 @@
   font-weight: 400;
   color: @dark-table;
   margin: 0 auto 25px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }
 
 .photo__likes {
@@ -76,6 +144,10 @@
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
 }
 
 .photo__like-button {
@@ -89,4 +161,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }

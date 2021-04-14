@@ -1,7 +1,14 @@
 .photo-editor__editor-slogan {
   background-color: @white;
   padding: 5px 20px 50px;
-  margin-top: 45px;
+
+  @media (min-width: @tablet-width) {
+    padding: 5px 110px 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 5px 380px 75px;
+  }
 }
 
 .photo-editor__title {
@@ -10,9 +17,24 @@
   color: @dark-table;
   font-weight: 400;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .photo-editor__form-wrapper {
   background-color: @grey;
   padding: 20px 20px 40px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 55px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+    padding: 55px 60px 55px 80px;
+    margin: 0 auto;
+  }
 }

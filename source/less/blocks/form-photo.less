@@ -270,6 +270,12 @@
     }
   }
 
+  &--bottom::after {
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
   &--current {
     display: flex;
   }

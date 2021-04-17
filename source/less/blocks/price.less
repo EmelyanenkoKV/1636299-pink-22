@@ -1,17 +1,21 @@
 .price {
-  background-image: url("../img/grey-background-min.jpg");
+  background-color: @grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100% 25px;
+  background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: cover;
   text-transform: uppercase;
-  padding: 130px 0 50px;
+  padding: 125px 0 60px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 135px 20px 60px;
+    padding: 115px 20px 70px;
+    background-size: 100% 50px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 260px 130px 95px;
+    padding: 160px 130px 100px;
+    background-size: 100% 80px;
   }
 }
 

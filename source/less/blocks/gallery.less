@@ -17,18 +17,18 @@
   padding: 0 20px;
   box-sizing: border-box;
   margin: 0 auto;
+  max-width: @mobile-width;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    max-width: 620px;
+    max-width: @tablet-width;
     width: 100%;
-    padding: 0;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 940px;
-    width: 100%;
+    max-width: 960px;
+    padding: 0 10px;
   }
 }

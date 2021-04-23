@@ -1,22 +1,17 @@
 .form-feedback {
-  max-width: 940px;
-  margin: 0 auto;
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
   }
 
   @media (min-width: @desktop-width) {
     flex-flow: row wrap;
-    padding: 0 10px;
   }
 }
 
 .form-feedback__name-wrapper {
   background-color: @white;
-  padding: 5px 20px 45px;
+  padding: 5px 0 45px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -26,7 +21,6 @@
   @media (min-width: @desktop-width) {
     padding: 5px 0 0;
     width: 435px;
-    box-sizing: border-box;
   }
 }
 
@@ -215,12 +209,16 @@
 .form-feedback__achievements-wrapper {
   background-color: @grey;
   padding: 40px 20px 45px;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @media (min-width: @tablet-width) {
     order: 3;
     padding: 0;
     margin-bottom: 65px;
     background-color: @white;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -365,7 +363,7 @@
 }
 
 .form-feedback__contacts-wrapper {
-  padding: 40px 20px 45px;
+  padding: 40px 0 45px;
 
   @media (min-width: @tablet-width) {
     order: 2;
@@ -381,12 +379,16 @@
 .form-feedback__platform-wrapper {
   padding: 40px 20px;
   background-color: @grey;
+  margin-right: -20px;
+  margin-left: -20px;
 
   @media (min-width: @tablet-width) {
     order: 1;
     background-color: @white;
     padding: 0;
     margin-bottom: 65px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -455,7 +457,7 @@
 
 .form-feedback__emotions-wrapper {
   background-color: @white;
-  padding: 40px 20px 50px;
+  padding: 40px 0 50px;
 
   @media (min-width: @tablet-width) {
     order: 4;
@@ -497,7 +499,7 @@
 }
 
 .form-feedback__submit-wrapper {
-  padding: 5px 20px 25px;
+  padding: 5px 0 25px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -505,12 +507,11 @@
     justify-content: space-between;
     align-items: center;
     order: 5;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    margin-bottom: 0;
   }
 }
 

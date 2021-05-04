@@ -59,7 +59,7 @@
 }
 
 .form-photo__filters {
-  padding: 40px 20px;
+  padding: 40px 20px 43px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 65px;
@@ -67,7 +67,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 150px;
+    margin-bottom: 140px;
   }
 }
 
@@ -141,6 +141,7 @@
   @media (min-width: @desktop-width) {
     width: 48px;
     height: 48px;
+    margin-right: 40px;
   }
 
   & .form-photo__icon path {
@@ -182,9 +183,11 @@
   width: 240px;
   height: 2px;
   background: @dark-table;
+  margin-top: 5px;
 
   @media (min-width: @tablet-width) {
     width: 200px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -194,9 +197,9 @@
 
 .form-photo__toggle {
   position: absolute;
-  top: -8px;
-  width: 12px;
-  height: 12px;
+  top: -2px;
+  width: 10px;
+  height: 10px;
   padding: 0;
   cursor: pointer;
   border: 2px solid @pink;
@@ -210,9 +213,11 @@
 
   &--crop {
     left: 195px;
+    top: -2px;
 
     @media (min-width: @tablet-width) {
-      left: 165px;
+      left: 160px;
+      top: -5px;
     }
 
     @media (min-width: @desktop-width) {
@@ -222,9 +227,11 @@
 
   &--fill {
     left: 60px;
+    top: -2px;
 
     @media (min-width: @tablet-width) {
-      left: 30px;
+      left: 25px;
+      top: -5px;
     }
 
     @media (min-width: @desktop-width) {
@@ -234,9 +241,11 @@
 
   &--contrast {
     left: 120px;
+    top: -2px;
 
     @media (min-width: @tablet-width) {
-      left: 104px;
+      left: 95px;
+      top: -5px;
     }
 
     @media (min-width: @desktop-width) {
@@ -249,7 +258,7 @@
   position: relative;
   display: none;
   align-items: center;
-  height: 70px;
+  height: 73px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -290,7 +299,8 @@
 
 .form-photo__button-photo {
   width: 280px;
-  padding: 20px 90px;
+  height: 55px;
+  padding: 15px 90px;
   box-sizing: border-box;
   border-radius: 30px;
   font-weight: 700;

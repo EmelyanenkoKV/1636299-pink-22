@@ -4,7 +4,7 @@
   background-size: image-size("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: @dark-blue;
-  padding: 95px 0 40px;
+  padding: 90px 0 30px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -29,7 +29,7 @@
     background-position: top;
     background-size: image-size("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    padding: 210px 0 128px 130px;
+    padding: 210px 0 130px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -54,7 +54,7 @@
 
 .store__welcome-img {
   position: absolute;
-  top: 81px;
+  top: 85px;
   left: -20px;
   width: @mobile-width;
   height: 286px;
@@ -63,15 +63,15 @@
     height: 545px;
     width: @tablet-width;
     top: -21px;
-    left: -40px;
+    left: -20px;
   }
 
   @media (min-width: @desktop-width) {
     overflow: hidden;
     width: 1050px;
     height: 645px;
-    top: -2px;
-    left: -55px;
+    top: 0;
+    left: 10px;
   }
 }
 
@@ -113,7 +113,7 @@
   line-height: 18px;
   box-sizing: border-box;
   width: 280px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   height: 55px;
 
   &:hover {
@@ -139,10 +139,11 @@
 
 .store__list {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   .list-reset;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 25px;
@@ -151,6 +152,10 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 45px;
   }
+}
+
+.store__item {
+  margin: 0 18px;
 }
 
 .store__link {

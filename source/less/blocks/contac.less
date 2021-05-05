@@ -13,7 +13,7 @@
 }
 
 .contac__title {
-  margin: 0 auto 10px;
+  margin: 0 auto;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -32,11 +32,18 @@
 
 .contac__contacts-list {
   .list-reset;
-  padding: 35px 0 40px;
+  padding: 35px 0 30px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 30px 0 0;
+    margin: 0 -20px 0 -10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 35px 0 0;
+    margin: 0 -30px 0 -10px;
   }
 }

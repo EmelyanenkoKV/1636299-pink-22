@@ -5,6 +5,48 @@
   box-shadow: 0 7px 15px @modal-shadow;
   border-radius: 1px;
 
+  &--failure {
+    display: none;
+    position: absolute;
+    top: 1425px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    @media (min-width: @tablet-width) {
+      top: 1165px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 800px;
+    }
+  }
+
+  &--success {
+    display: none;
+    position: absolute;
+    top: 1899px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    @media (min-width: @tablet-width) {
+      top: 1638px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 1275px;
+    }
+  }
+
+  &--failure-show {
+    display: block;
+  }
+
+  &--success-show {
+    display: block;
+  }
+
   @media (min-width: @tablet-width) {
     width: 460px;
   }
@@ -91,6 +133,7 @@
 
 .modal-form__bottom-failure {
   padding: 25px 20px 50px;
+  background-color: @white;
 
   @media (min-width: @desktop-width) {
     background-color: @grey;

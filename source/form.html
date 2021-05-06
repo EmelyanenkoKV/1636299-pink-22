@@ -48,7 +48,7 @@
           <ul class="form-feedback__list">
             <li class="form-feedback__name-item"><label class="form-feedback__label" for="lastname">Фамилия:</label> <input class="form-feedback__input" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию *" required></li>
             <li class="form-feedback__name-item"><label class="form-feedback__label" for="firstname">Имя:</label> <input class="form-feedback__input" type="text" id="firstname" name="firstname" placeholder="Введите ваше имя *" required></li>
-            <li class="form-feedback__name-item"><label class="form-feedback__label" for="patronymic">Отчество:</label> <input class="form-feedback__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" required></li>
+            <li class="form-feedback__name-item"><label class="form-feedback__label" for="patronymic">Отчество:</label> <input class="form-feedback__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже"></li>
           </ul>
         </fieldset>
       </div>
@@ -56,12 +56,30 @@
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--achievements">
           <legend class="form-feedback__legend form-feedback__legend--achievements"><span class="form-feedback__legend-text">Ваши безбашенные достижения в путешествии</span></legend>
           <ul class="form-feedback__list-achievements">
-            <li class="form-feedback__achievements-item"><input class="form-feedback__checkbox visually-hidden" type="checkbox" id="shark" name="achievements" checked="checked"> <label class="form-feedback__label-checkbox" for="shark">Сделал селфи с акулой</label></li>
-            <li class="form-feedback__achievements-item"><input class="form-feedback__checkbox visually-hidden" type="checkbox" id="beach" name="achievements" checked="checked"> <label class="form-feedback__label-checkbox" for="beach">Обгорел на пляже</label></li>
-            <li class="form-feedback__achievements-item"><input class="form-feedback__checkbox visually-hidden" type="checkbox" id="chuck" name="achievements"> <label class="form-feedback__label-checkbox" for="chuck">Видел Чака Норриса</label></li>
-            <li class="form-feedback__achievements-item"><input class="form-feedback__checkbox visually-hidden" type="checkbox" id="souvenirs" name="achievements"> <label class="form-feedback__label-checkbox" for="souvenirs">Накупил сувениров</label></li>
-            <li class="form-feedback__achievements-item"><input class="form-feedback__checkbox visually-hidden" type="checkbox" id="tower" name="achievements" checked="checked"> <label class="form-feedback__label-checkbox" for="tower">Удержал башню</label></li>
-            <li class="form-feedback__achievements-item"><input class="form-feedback__checkbox visually-hidden" type="checkbox" id="hotel" name="achievements"> <label class="form-feedback__label-checkbox" for="hotel">Разгромил отель</label></li>
+            <li class="form-feedback__achievements-item">
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="shark" name="achievements" checked="checked">
+              <label class="form-feedback__label-checkbox" for="shark">Сделал селфи с акулой</label>
+            </li>
+            <li class="form-feedback__achievements-item">
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="beach" name="achievements" checked="checked">
+              <label class="form-feedback__label-checkbox" for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="form-feedback__achievements-item">
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="chuck" name="achievements">
+              <label class="form-feedback__label-checkbox" for="chuck">Видел Чака Норриса</label>
+            </li>
+            <li class="form-feedback__achievements-item">
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="souvenirs" name="achievements">
+              <label class="form-feedback__label-checkbox" for="souvenirs">Накупил сувениров</label>
+            </li>
+            <li class="form-feedback__achievements-item">
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="tower" name="achievements" checked="checked">
+              <label class="form-feedback__label-checkbox" for="tower">Удержал башню</label>
+            </li>
+            <li class="form-feedback__achievements-item">
+              <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="hotel" name="achievements">
+              <label class="form-feedback__label-checkbox" for="hotel">Разгромил отель</label>
+            </li>
           </ul>
         </fieldset>
       </div>
@@ -69,8 +87,14 @@
         <fieldset class="form-feedback__fieldset form-feedback__fieldset--contacts">
           <legend class="form-feedback__legend form-feedback__legend--contacts"><span class="form-feedback__legend-text">Контактная информация</span></legend>
           <ul class="form-feedback__list form-feedback__list--contacts">
-            <li class="form-feedback__name-item form-feedback__name-item--contacts form-feedback__name-item--phone"><label class="form-feedback__label form-feedback__label--contacts" for="phone">Номер телефона</label> <input class="form-feedback__input form-feedback__input--contacts" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" required></li>
-            <li class="form-feedback__name-item form-feedback__name-item--contacts form-feedback__name-item--email"><label class="form-feedback__label form-feedback__label--contacts" for="email">Адрес почты</label> <input class="form-feedback__input form-feedback__input--contacts" type="email" id="email" name="email" placeholder="Введите почту *" required></li>
+            <li class="form-feedback__name-item form-feedback__name-item--contacts form-feedback__name-item--phone">
+              <label class="form-feedback__label form-feedback__label--contacts" for="phone">Номер телефона</label>
+              <input class="form-feedback__input form-feedback__input--contacts" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="form-feedback__name-item form-feedback__name-item--contacts form-feedback__name-item--email">
+              <label class="form-feedback__label form-feedback__label--contacts" for="email">Адрес почты</label>
+              <input class="form-feedback__input form-feedback__input--contacts" type="email" id="email" name="email" placeholder="Введите почту *" required>
+            </li>
           </ul>
         </fieldset>
       </div>
@@ -131,10 +155,11 @@
   </div>
 </footer>
 <div class="modal-form modal-form--failure">
-  <div class="modal-form__top-failure"><p class="modal-form__title modal-form__title--failure">Что-то пошло не так!</p>
+  <div class="modal-form__top-failure">
+    <p class="modal-form__title modal-form__title--failure">Что-то пошло не так!</p>
     <p class="modal-form__text modal-form__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p></div>
   <div class="modal-form__bottom-failure">
-    <button class="modal-form__button">OK</button>
+    <button class="modal-form__button modal-form__button--failure">OK</button>
   </div>
 </div>
 <div class="modal-form modal-form--success">

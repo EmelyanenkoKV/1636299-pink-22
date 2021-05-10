@@ -4,40 +4,12 @@
   box-sizing: border-box;
   box-shadow: 0 7px 15px @modal-shadow;
   border-radius: 1px;
-
-  &--failure {
-    display: none;
-    position: absolute;
-    top: 1425px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-
-    @media (min-width: @tablet-width) {
-      top: 1165px;
-    }
-
-    @media (min-width: @desktop-width) {
-      top: 800px;
-    }
-  }
-
-  &--success {
-    display: none;
-    position: absolute;
-    top: 1899px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-
-    @media (min-width: @tablet-width) {
-      top: 1638px;
-    }
-
-    @media (min-width: @desktop-width) {
-      top: 1275px;
-    }
-  }
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 
   &--failure-show {
     display: block;

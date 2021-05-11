@@ -74,10 +74,6 @@
 }
 
 .efficiency__title {
-  &--hidden {
-    display: none;
-  }
-
   @media (min-width: @tablet-width) {
     margin: 0 0 10px;
     width: 168px;
@@ -85,19 +81,11 @@
     font-weight: 700;
     line-height: 36px;
     color: @black;
-
-    &--hidden {
-      display: block;
-    }
   }
 
   @media (min-width: @desktop-width) {
     width: auto;
     margin: 0 0 20px;
-
-    &--hidden {
-      display: none;
-    }
   }
 }
 
@@ -108,7 +96,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 50px;
     margin: 0 0 35px;
   }
 }

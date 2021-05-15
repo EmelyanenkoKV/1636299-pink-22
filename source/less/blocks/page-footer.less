@@ -1,10 +1,10 @@
 .page-footer {
-  padding: 45px 0;
+  padding: 35px 0;
   box-sizing: border-box;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
-    padding: 30px 0 40px;
+    padding: 37px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,8 +34,6 @@
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
-    display: flex;
-    align-items: flex-start;
   }
 }
 
@@ -44,8 +42,8 @@
 }
 
 .page-footer__copyright-link {
-  display: block;
   color: @pink;
+  display: flex;
 
   &:hover {
     color: @dark-table;
@@ -53,5 +51,10 @@
 
   &:active {
     color: @gray-dark;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: flex-end;
   }
 }

@@ -4,7 +4,7 @@
   background-size: image-size("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: @dark-blue;
-  padding: 90px 0 30px;
+  padding: 88px 0 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -13,10 +13,10 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center;
+    background-position: top center;
     background-size: image-size("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    padding: 205px 0 114px 0;
+    padding: 205px 0 0 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("..img/bg-back-tablet@2x.jpg");
@@ -29,7 +29,7 @@
     background-position: top;
     background-size: image-size("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    padding: 210px 0 130px;
+    padding: 208px 0 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -44,17 +44,24 @@
 
 .store__wrapper {
   width: 280px;
+  padding-bottom: 30px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 300px;
     margin-top: 0;
-    position: relative;
+    padding-bottom: 116px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 127px;
   }
 }
 
 .store__welcome-img {
   position: absolute;
-  top: 85px;
+  top: auto;
+  bottom: 271px;
   left: -20px;
   width: @mobile-width;
   height: 286px;
@@ -62,7 +69,8 @@
   @media (min-width: @tablet-width) {
     height: 545px;
     width: @tablet-width;
-    top: -21px;
+    top: auto;
+    bottom: 0;
     left: -20px;
   }
 
@@ -70,8 +78,9 @@
     overflow: hidden;
     width: 1050px;
     height: 645px;
-    top: 0;
-    left: 10px;
+    top: auto;
+    bottom: 0;
+    left: 15px;
   }
 }
 
@@ -133,7 +142,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 }
 
@@ -156,11 +165,19 @@
 
 .store__item {
   margin: 0 18px;
+
+  &:last-child {
+    margin-top: 7px;
+  }
 }
 
 .store__link {
   width: 56px;
   height: 56px;
+
+  &:focus {
+    outline: 1px solid @white;
+  }
 }
 
 .store__description {

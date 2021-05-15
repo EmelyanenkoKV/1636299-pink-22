@@ -3,19 +3,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 30px;
+  margin: 0 auto 35px;
 
   @media (min-width: @tablet-width) {
     margin: 0 15px 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    margin: 0 0 0 12px;
   }
 }
 
 .social-button__item:not(:last-child) {
   margin-right: 5px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 1px;
+  }
 }
 
 .social-button__link {

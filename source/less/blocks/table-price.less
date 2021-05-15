@@ -1,8 +1,8 @@
 .table-price {
   width: 1100px;
   position: relative;
-  left: 50%;
-  transform: translateX(-61%);
+  left: 49%;
+  transform: translateX(-62%);
   border-spacing: 0;
   margin-bottom: 35px;
   border-bottom: 2px solid @light-grey;
@@ -15,30 +15,39 @@
     transform: none;
     width: 100%;
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+  }
 }
 
 .table-price__header {
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 26px;
   border-right: 2px solid @light-grey;
-  font-size: 18px;
   color: @white;
   background-color: @dark-table;
   border-radius: 2px 0 0 0;
+  min-width: 276px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding-top: 10px;
+    padding-top: 11px;
     padding-bottom: 10px;
+    min-width: 152px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 20px;
+    max-width: 225px;
+    border-bottom: 2px solid @dark-table;
   }
 
   &:first-child {
     border-right: 0;
+    border-bottom: 0;
     background-color: transparent;
   }
 
@@ -51,28 +60,39 @@
     border-radius: 0 2px 0 0;
   }
 
-  &--hit {
+  &--hit::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -2px;
+    width: 73px;
+    height: 72px;
     background-image: url("../img/bg-hit.svg");
-    background-size: image-size("../img/bg-hit.svg");
-    background-position: 0 0;
     background-repeat: no-repeat;
-
+    background-size: 100%;
 
     @media (min-width: @tablet-width) {
+      top: -5px;
+      left: 0;
+      width: 60px;
+      height: 62px;
       background-image: url("../img/bg-hit-tablet.svg");
-      background-size: image-size("../img/bg-hit-tablet.svg");
     }
 
     @media (min-width: @desktop-width) {
+      top: 1px;
+      left: 1px;
+      width: 72px;
+      height: 72px;
       background-image: url("../img/bg-hit.svg");
-      background-size: image-size("../img/bg-hit.svg");
     }
   }
 
-  &--hit::before {
-    content: attr(data-hit-text);
+  &--hit::after {
+    content: "хит";
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 10px;
     transform: rotate(-45deg);
     font-size: 14px;
@@ -80,25 +100,20 @@
     font-weight: 400;
     color: @white;
 
-
     @media (min-width: @tablet-width) {
-      top: 10px;
+      top: 8px;
       left: 7px;
     }
 
     @media (min-width: @desktop-width) {
       top: 15px;
-      left: 12px;
+      left: 14px;
     }
   }
 }
 
-.table-price__license-type,
-.table-price__license-price {
-  display: block;
-}
-
 .table-price__license-type {
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -111,45 +126,48 @@
 }
 
 .table-price__license-price {
+  display: block;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   text-align: center;
   color: @white;
 
+  @media (min-width: @tablet-width) {
+    margin-top: -4px;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 24px;
+    margin-top: 0;
   }
 }
 
 .table-price__cell {
-  padding: 18px 20px 16px 18px;
+  padding: 12px 20px 16px 18px;
   border-right: 2px solid @light-grey;
   border-top: 2px solid @light-grey;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
-    padding: 10px 20px;
+    padding: 7px 16px;
     width: 25%;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 17px 20px;
+    padding: 14px 19px 15px;
   }
 
   &:first-child {
     border-left: 2px solid @light-grey;
+    line-height: 30px;
 
     @media (min-width: @tablet-width) {
       display: table-cell;
-      padding-left: 15px;
-      padding-right: 15px;
       text-transform: none;
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 30px;
-      padding-right: 20px;
       font-size: 18px;
     }
   }
@@ -187,11 +205,21 @@
     width: 31px;
     height: 23px;
     background-image: url("../img/yes.svg");
+    background-position: 5px 0;
+
+    @media (min-width: @tablet-width) {
+      background-position: 0 0;
+    }
   }
 
   &--false {
     width: 27px;
     height: 27px;
     background-image: url("../img/no.svg");
+    background-position: 2px 0;
+
+    @media (min-width: @tablet-width) {
+      background-position: 0 0;
+    }
   }
 }

@@ -1,21 +1,32 @@
 .contacts-list__item {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
+
+    &:first-child {
+      margin-left: 2px;
+    }
+
+    &:nth-child(2) {
+      margin-right: -17px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     &:first-child {
       order: 1;
+      margin-left: 2px;
     }
 
     &:nth-child(2) {
       order: 3;
+      margin-right: -15px;
     }
 
     &:last-child {
       order: 2;
+      margin-left: 18px;
     }
   }
 }
@@ -32,7 +43,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 17px;
+    margin-bottom: 19px;
   }
 }
 

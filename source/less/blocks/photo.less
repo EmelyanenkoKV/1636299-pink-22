@@ -1,5 +1,9 @@
 .photo {
-  margin: 0 auto 20px;
+  margin: 0 auto 18px;
+
+  &--wide {
+    margin: 0 auto 19px;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 0 0 20px;
@@ -84,46 +88,44 @@
 .photo__content {
   background-color: @grey;
   width: 280px;
-  padding: 18px 10px 20px 15px;
+  padding: 17px 5px 20px 17px;
   margin: 0 auto;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 300px;
-    height: auto;
-    min-height: 155px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 20px 30px 25px;
+    width: 300px;
+    flex-grow: 1;
+    padding: 22px 30px 22px;
+    min-height: 155px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 25px 30px 25px 25px;
+    padding: 23px 30px 22px 27px;
   }
 
   &--wide {
+    padding: 18px 5px 20px 17px;
+
     @media (min-width: @tablet-width) {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
-      padding: 25px 30px;
+      padding: 24px 29px 15px 30px;
       width: 620px;
-      height: auto;
+      min-height: auto;
     }
 
     @media (min-width: @desktop-width) {
       width: 940px;
+      padding: 24px 29px 23px 26px;
     }
   }
 }
 
 .photo__author {
   margin: 0;
-
-  @media (min-width: @tablet-width) {
-    margin: auto 0 auto;
-  }
 }
 
 .photo__author-name {
@@ -141,47 +143,56 @@
 .photo__text {
   font-weight: 400;
   color: @dark-table;
-  margin: 0 auto 10px;
+  margin: 0 auto 12px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
   }
 
   &--wide {
+    margin: 0 auto 10px;
+
     @media (min-width: @tablet-width) {
       order: 2;
+    }
+
+    @media (min-width: @desktop-width) {
       margin: 0;
     }
   }
 }
 
 .photo__likes {
-  width: 120px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
+    justify-content: space-between;
     width: auto;
-    order: 1;
     margin-top: auto;
   }
 
   &--wide {
     @media (min-width: @tablet-width) {
-      width: 120px;
-      margin-bottom: auto;
+      order: 1;
+      max-width: 120px;
     }
   }
 }
 
 .photo__like-count {
-  text-align: right;
+  text-align: left;
   color: @pink;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-left: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-right: 16px;
+  }
 }
 
 .photo__like-button {
@@ -190,7 +201,7 @@
   width: 13px;
   height: 12px;
   border: 0;
-  background-color: transparent;
+  background-color: @grey;
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
   background-size: contain;

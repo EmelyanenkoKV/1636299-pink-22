@@ -477,8 +477,10 @@
     border-color: @pink;
   }
 
-  &:hover + .form-user__label-radio::before,
-  &:hover + .form-user__label-checkbox::before {
+  &:not(:checked):hover + .form-user__label-radio::before,
+  &:not(:checked):hover + .form-user__label-checkbox::before,
+  &:focus + .form-user__label-radio::before,
+  &:focus + .form-user__label-checkbox::before {
     border-color: @dark-table;
   }
 
@@ -581,7 +583,7 @@
   border: 2px solid @green;
   border-radius: 3px;
   width: 276px;
-  height: 60px;
+  min-height: 60px;
   box-sizing: border-box;
   text-transform: uppercase;
 
@@ -604,6 +606,7 @@
 
   &:disabled {
     background-color: @light-grey;
+    border: none;
   }
 }
 

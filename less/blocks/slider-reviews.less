@@ -1,0 +1,51 @@
+.slider-reviews {
+  background-color: @white;
+  padding: 40px 20px 35px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 93px 20px 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 185px 10px 15px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 73px;
+    background-size: 79px 63px;
+  }
+}
+
+.slider-reviews__slide {
+  background-color: @white;
+  margin: 0 auto 30px;
+  display: none;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 780px;
+  }
+
+  &--current {
+    display: flex;
+  }
+}
+
+.slider-reviews__slider-nav {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    top: 50%;
+    left: 100px;
+    right: 100px;
+    outline: none;
+  }
+}

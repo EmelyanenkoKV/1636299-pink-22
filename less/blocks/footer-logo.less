@@ -1,0 +1,39 @@
+.footer-logo {
+  display: block;
+  width: 145px;
+  height: 40px;
+  margin: 0 auto 40px;
+  color: @dark-table;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer-logo__image {
+  display: block;
+  width: 145px;
+  height: 40px;
+  fill: currentColor;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+      width: 147px;
+    }
+  }
+}
